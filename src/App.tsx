@@ -1,3 +1,4 @@
 import React from "react";
+import { Chart } from "@/modules/Chart";
 
-export const App: React.FC = () => <h1>Hello Word</h1>;
+export const App: React.FC = () => <Chart />;
