@@ -1,5 +1,8 @@
 import React from "react";
-import { chart } from "@/data";
+import { ChartLine } from "@/components/ChartLineGraph";
+import { data } from "@/data";
+import { getCharts } from "@/modules/Loader/loader";
 
-console.log(chart);
-export const Chart = () => <div></div>;
+const area: IChartView = { width: 800, height: 154 };
+const chartsArray = getCharts(data);
+export const Chart = () => null;

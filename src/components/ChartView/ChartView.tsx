@@ -6,12 +6,16 @@ export interface IChartView {
   height?: number;
 }
 
+interface IChartViewsProps {
+  area: IChartView;
+}
+
 export const ChartViewContainer = styled.div`
   height: 430px;
   max-height: 75vh;
   position: relative;
 `;
 
-export const ChartView: React.FC<IChartView> = ({ children }) => (
+export const ChartView: React.FC<IChartViewsProps> = ({ children }) => (
   <ChartViewContainer>{children}</ChartViewContainer>
 );

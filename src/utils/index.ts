@@ -43,13 +43,3 @@ export const formatNumber = (n: number, shorten: boolean): string => {
   return n.toLocaleString();
 };
 
-export const normalize = (value: number, min: number, max: number): number =>
-  Math.abs((value - min) / (max - min));
-
-export const getMinMax = (
-  valuesArray: number[]
-): Record<"min" | "max", number> => {
-  const max = Math.max(...valuesArray);
-  const min = Math.min(...valuesArray);
-  return { min, max };
-};
